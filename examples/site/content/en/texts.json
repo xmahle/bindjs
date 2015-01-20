@@ -1,0 +1,33 @@
+{
+  "title": "Site Bind.js example",
+  "layout": {
+    "title": "Bind.js basic site example",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "language": {
+      "en": "In English",
+      "fi": "Suomeksi"
+    }
+  },
+  "pages": {
+    "home": {
+      "pageTitle": "Home",
+      "title": "What this does?",
+      "content": "Sites can be easily created with bind.Site element. In this example, only difference here is that layout.html file is loaded externally and rendered trought <a href=\"https://github.com/blueimp/JavaScript-Templates\" target=\"_blank\">tmpl.js</a>",
+      "dialog": {
+        "openButton": "Click me!",
+        "closeButton": "Close me!",
+        "title": "Dialog title",
+        "content": "Dialog content"
+      }
+    },
+    "about": {
+      "pageTitle": "About",
+      "title": "About what?"
+
+    }
+  }
+}

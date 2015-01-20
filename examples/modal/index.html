@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <link type="text/css" rel="stylesheet" href="../example.css"></link>
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>Modal Bind.js example</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="container">
+<h1>Bind.js modal dialog element example</h1>
+<h3>What this does?</h3>
+<p>This is exactly same code as in basic example, except element is initialized as Modal.</p>
+<div class="button" data-name="clickelement" data-event-type="click" data-event-action="toggle" data-event-target="modalDialog">
+    Click me!
+</div>
+<div class="dialog" data-object="Modal" data-name="modalDialog"><h4>Modal title</h4><p>Modal content</p><a class="button closeModal">Close</a></div>
+<p>&nbsp;</p><p>&nbsp;</p>
+<h3>Code:</h3>
+<pre><code class="html">
+&lt;div class="clickelement" data-name="clickelement" data-event-type="click" data-event-action="toggle" data-event-target="toggleelement"&gt;
+    Click me!
+&lt;/div&gt;
+
+&lt;div class="dialog" data-object="Modal" data-name="modalDialog"&gt;
+    &lt;h4&gt;Modal title&lt;/h4&gt;
+    &lt;p&gt;Modal content&lt;/p&gt;
+    &lt;a class="button closeModal"&gt;Close&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+<h3>Used classes:</h3>
+<pre><code>
+&lt;script src="bind.js"&gt;&lt;/script&gt;
+&lt;script src="bind.Element.js"&gt;&lt;/script&gt;
+&lt;script src="bind.Modal.js"&gt;&lt;/script&gt;
+</code></pre>
+</div>
+<script>
+    window.$b = window.$b||{};
+    window.$b.DEBUG = true;
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+<script src="../../src/bind.js"></script>
+<script src="../../src/bind.Element.js"></script>
+<script src="../../src/bind.Modal.js"></script>
+<script>
+$(document).ready($b.OP.init);
+</script>
+</body>
+</html>

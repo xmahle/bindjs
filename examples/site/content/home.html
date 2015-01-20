@@ -1,0 +1,11 @@
+<h3>{%#o.title%}</h3>
+<p>{%#o.content%}</p>
+
+
+<button type="button" class="btn btn-warning btn-sm" data-name="clickelement" data-event-type="click" data-event-action="toggle" data-event-target="modalDialog">{%#o.dialog.openButton%}</button>
+
+<div class="dialog" data-object="Modal" data-name="modalDialog">
+    <h4>{%#o.dialog.title%}</h4>
+    <p>{%#o.dialog.content%}</p>
+    <button type="button" class="btn btn-danger btn-sm closeModal">{%#o.dialog.closeButton%}</button>
+</div>

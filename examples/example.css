@@ -1,0 +1,141 @@
+body {
+    background: none repeat scroll 0 0 #EEEEEE;
+    margin: auto;
+    width: 100%;
+}
+.container {
+    background: none repeat scroll 0 0 #FFFFFF;
+    width: 80%;
+    display: block;
+    position: relative;
+    padding: 10px;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+.dialog {
+    background-color:#FFF;
+    display:none;
+    width:800px;
+
+    position:absolute;
+    z-index:301;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 20px;
+
+}
+.dialog p {
+    font-weight: 200;
+    line-height: 120%;
+    margin: 15px 0;
+}
+.dialog a {
+    color: #003A65;
+}
+.dialog .button {
+    bottom: 20px;
+    position: absolute;
+}
+.dialog .closeModal {
+    right: 20px;
+}
+#overlay {
+    background-color:#333;
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:100;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+}
+
+.button {
+    cursor: pointer;
+    display: block;
+    padding: 6px 20px;
+    color: #FFFFFF !important;
+    text-align: center;
+    font-size: 18px;
+    background: #FAAD3B;
+    border: 1px #F9BD6E solid;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    max-width: 200px;
+}
+
+.button:hover {
+    background: #F9BD6E;
+    text-decoration: none;
+}
+
+.page {
+    display: none;
+
+}
+#loadingScreen {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size:cover;
+    background: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#loadingScreen .loadProgressContainer {
+    width: 200px;
+    height: 10px;
+    display: block;
+    position: relative;
+    margin: auto;
+    top: 50%;
+}
+#loadingScreen .progressbar {
+    width: 200px;
+    height: 10px;
+    background: #B7B0AD;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+#loadingScreen .progressbar .bar {
+    width: 0px;
+    height: 10px;
+    background: #FAAD3B;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+#loadingScreen .loadProgressPercent {
+    text-align: center;
+}
+
+#loadingScreen .loadingFooter {
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.language-selector {
+    margin: 6px;
+    position: fixed;
+    right: 12px;
+    top: 0;
+}

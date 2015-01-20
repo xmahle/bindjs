@@ -1,0 +1,32 @@
+{
+  "title": "Sivusto esimerkki",
+  "layout": {
+    "title": "Bind.js perussivusto esimerkki",
+    "nav": {
+      "home": "Koti",
+      "about": "Jotain",
+      "contact": "Muuta"
+    },
+    "language": {
+      "en": "In English",
+      "fi": "Suomeksi"
+    }
+  },
+  "pages": {
+    "home": {
+      "pageTitle": "Kotona",
+      "title": "Mitä tää duunaa?",
+      "content": "Saitteja on tosi iisi tehä tälleensä erillisellä layout.html ja sisältösivuilla, lisäksi meitil on tekstit erillises jasoni tiedostossa!",
+      "dialog": {
+        "openButton": "Kikkaa mua!",
+        "closeButton": "Älä kikkaa mua!",
+        "title": "Onko asiaa?",
+        "content": "Varmasti!"
+      }
+    },
+    "about": {
+      "pageTitle": "Että",
+      "title": "Että mitä?"
+    }
+  }
+}
