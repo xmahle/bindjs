@@ -9,13 +9,25 @@
     p.Site_initialize = p.initialize;
     p.Site_elementCreated = p.elementCreated;
     p.settings = {
-        "layout": "layout.html",
-        "vars": "texts.json",
+        "layout": "layout-html",
+        "vars": "texts-json",
         "defaultLanguage": "en",
         "languages": [
             "fi",
             "en"
         ],
+        "paths": {
+            "templates": "content/",
+            "variables": "content/"
+        },
+        "preload": {
+            "templates": {
+                "layout": "layout.html"
+            },
+            "variables": {
+                "vars": "texts.json"
+            }
+        },
         "pages": [
             {
                 "id": "home",
@@ -40,6 +52,7 @@
 
     p.initialize = function() {
         this.Site_initialize();
+
         $(this).off("objectCreated");
 
         var _self = window.site = this;
@@ -51,6 +64,16 @@
         var _self = this;
 
         _self.Site_elementCreated();
+
+
+    };
+
+    // Override
+    p.launchSite = function() {
+        var _self = this;
+
+        // Create layout objects
+        $b.OP.partial("body");
 
 
     };

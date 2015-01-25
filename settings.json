@@ -1,0 +1,27 @@
+{
+  "paths": {
+    "scripts": "src/",
+    "styles": "./",
+    "images": "img/",
+    "fonts": "fonts/"
+  },
+  "preload": {
+    "scripts": {
+      "tmpl": "//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js",
+      "bootstrap": "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"
+    },
+    "styles": {
+      "bootstrap": "//bootswatch.com/darkly/bootstrap.min.css",
+      "site": "site.css",
+      "awesome": "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    },
+    "images": {
+    },
+    "templates": {
+
+    },
+    "variables": {
+
+    }
+  }
+}

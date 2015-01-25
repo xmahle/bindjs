@@ -9,6 +9,7 @@ body {
     display: block;
     position: relative;
     padding: 10px;
+    margin: auto;
 }
 
 h3 {

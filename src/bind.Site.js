@@ -87,7 +87,6 @@
             _self.startPreloader();
             return;
         }
-
         //_self.loadVars();
     };
 

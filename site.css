@@ -1,0 +1,37 @@
+body {
+     background: none repeat scroll 0 0 #EEEEEE;
+     margin: auto;
+     width: 100%;
+     height: 100%;
+ }
+.container {
+    background: none repeat scroll 0 0 #333333;
+    width: 80%;
+    display: block;
+    position: relative;
+    padding: 10px 32px;
+    height: 100%;
+}
+
+.footer {
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #bbbbbb;
+}
+.footer a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #00bc8c;
+}
+
+section {
+    margin: 32px 0;
+    display: none;
+}

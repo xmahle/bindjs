@@ -4,13 +4,57 @@
     <meta charset="UTF-8">
     <title>Bind.js</title>
 </head>
-<body>
-<h1>Bind.js</h1>
-<p>This main page is still under construction</p>
-<p>Go to:</p>
-<ul>
-    <li><a href="https://github.com/xmahle/bindjs">GitHub - Bind.js</a></li>
-    <li><a href="http://marko.kurjonen.fi">My own page</a></li>
-</ul>
+<body data-object="BindSite" data-name="BindSite">
+<div class="container">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#examples">Examples</a></li>
+        </ul>
+        <h3 class="text-muted">Bind.js</h3>
+    </div>
+    <section id="homePage">
+        <h1>Home</h1>
+        <p>This main page is still under construction</p>
+        <p>Go to:</p>
+        <ul>
+            <li><a href="https://github.com/xmahle/bindjs">GitHub - Bind.js</a></li>
+            <li><a href="http://marko.kurjonen.fi">My own page</a></li>
+        </ul>
+    </section>
+    <section id="downloadPage">
+        <h1>Download</h1>
+
+        <p>Currently, only way to download is to download from: <a href="https://github.com/xmahle/bindjs">GitHub - Bind.js</a></p>
+    </section>
+    <section id="examplesPage">
+        <h1>Examples</h1>
+        <p>Here:</p>
+        <ul>
+            <li><a href="./examples/basic" target="_blank">01 - Basic example</a></li>
+            <li><a href="./examples/modal" target="_blank">02 - Modal example</a></li>
+            <li><a href="./examples/site" target="_blank">03 - Site example</a> (Not working with current version)</li>
+        </ul>
+    </section>
+</div>
+<div class="footer">
+    <span>&copy; Marko Kurjonen 2015</span>
+</div>
+
+<a href="https://github.com/xmahle/bindjs"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+
+<script src="./lib/head.load.js"></script>
+<script>
+    head.ready(document, function() {
+        head.load(
+                ["//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js", "./src/bind.js", "./src/bind.Element.js", "./src/bind.Site.js","./site.js"],
+                function() {
+                    // Mandatory javascripts for bind.js loaded!
+                    $(document).ready($b.OP.init);
+                }
+        );
+    });
+</script>
 </body>
 </html>
